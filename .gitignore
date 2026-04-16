@@ -1,0 +1,5 @@
+# Never commit real credentials
+.credentials
+*.credentials
+.env
+.DS_Store
