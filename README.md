@@ -8,6 +8,7 @@ A collection of skills for [Claude Code](https://claude.ai/claude-code) that add
 |---|---|
 | **find-skills** | Discover and install new Claude Code skills |
 | **frontend-design** | Create distinctive, production-grade frontend interfaces with high design quality |
+| **ghl-mcp** | Read/write to a GoHighLevel sub-account via the LeadConnector REST API (curl-based, no MCP server) |
 | **gmail** | Read emails from Gmail (read-only) |
 | **google-calendar** | Read and create Google Calendar events |
 | **google-sheets** | Read, audit, and edit Google Sheets spreadsheets |
@@ -39,6 +40,7 @@ Some skills require credentials via environment variables. Set these in your she
 
 | Skill | Required env vars |
 |---|---|
+| **ghl-mcp** | `GHL_ACCESS_TOKEN` (Private Integration Token, format `pit-<uuid>`); also edit `LOCATION_ID` placeholder in the SKILL.md |
 | **gmail** | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN` |
 | **google-calendar** | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN` |
 | **google-sheets** | Google auth (service account, gcloud CLI, or API key — see skill docs) |
